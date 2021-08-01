@@ -1,86 +1,205 @@
-body{
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    color: #0A143A;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #0a143a;
 }
 
-.header{
-    max-width: 1146px;
-    margin: 0 auto;
-    padding-top: 30px;
+.container {
+  max-width: 1146px;
+  margin: 0 auto;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 12px;
 }
 
-.navbar-menu{
-    margin-right: auto;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
 
-.menu{
-    list-style: none;
-    margin: 0;
-    padding-left: 22px;
-    padding-right: 22px;
-    display: flex;
+.navbar-menu {
+  margin-right: auto;
 }
 
-.menu-item:not(:last-child){
-    margin-right: 14px;
+.menu {
+  list-style: none;
+  margin: 0;
+  padding-left: 22px;
+  padding-right: 22px;
+  display: flex;
 }
 
-.menu-link{
-    text-decoration: none;
-    color: inherit;
+.menu-item:not(:last-child) {
+  margin-right: 14px;
 }
 
-.button{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 15px;
+.menu-link {
+  text-decoration: none;
+  color: inherit;
 }
 
-.button-link{
-    color: inherit;
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
 }
 
-.button-primary{
-    background-color: #256eeb;
-    border-radius: 5px;
-    color: white;
+.button-link {
+  color: inherit;
 }
 
-.search-panel{
-    padding: 3px;
-    display: flex;
-    height: 50px;
-    background-color: #256EEB;
-    border-radius: 5px;
+.button-primary {
+  background-color: #256eeb;
+  border-radius: 5px;
+  color: white;
 }
 
-.search-input{
-    flex-grow: 1;
-    background: white;
-    border-radius: 2.5px;
-    border: none;
-    padding-left: 22px;
-    padding-right: 22px;
+.search-panel {
+  padding: 3px;
+  display: flex;
+  height: 50px;
+  background-color: #256eeb;
+  border-radius: 5px;
 }
 
-.search-button{
-    background: none;
-    border: none;
-    color: white;
-    padding-left: 20px;
-    padding-right: 17px;
-    display: flex;
-    align-items: center;
+.search-input {
+  flex-grow: 1;
+  background: white;
+  border-radius: 2.5px;
+  border: none;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
-.search-button-text{
- margin-left: 5px;   
+.search-button {
+  background: none;
+  border: none;
+  color: white;
+  padding-left: 20px;
+  padding-right: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.search-button-text {
+  margin-left: 5px;
+}
+
+.page-content {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-column-gap: 30px;
+}
+
+.card-image {
+  border-radius: 10px;
+  width: 264px;
+  height: 178px;
+  object-fit: cover;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+
+.card-title {
+  color: #256eeb;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-price {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.page-title {
+  font-size: 24px;
+}
+
+aside .page-title {
+  font-size: 18px;
+}
+
+.service {
+  margin-top: 23px;
+  margin-bottom: 25px;
+}
+
+.service-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.service-text {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 0;
+  max-width: 217px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 5px;
+}
+
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 12px;
 }
